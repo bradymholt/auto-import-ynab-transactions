@@ -1,0 +1,14 @@
+name: Import YNAB Transactions
+on: 
+  workflow_dispatch:
+  schedule: 
+    - cron: "0 */6 * * *" # Every 6 hours
+jobs:
+  import-ynab-transactions:
+    runs-on: ubuntu-latest
+    steps:      
+        uses: actions/checkout@v3      
+        run: |
+          curl -H "Authorization: Bearer ${{ secrets.YNAB_API_ACCESS_TOKEN }}" \
+            -X POST https://api.ynab.com/v1/budgets/${{ secrets.YNAB_BUDGET_ID || 'last-used' }}/transactions/import
+          
