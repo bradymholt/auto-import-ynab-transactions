@@ -7,8 +7,8 @@ jobs:
   import-ynab-transactions:
     runs-on: ubuntu-latest
     steps:      
-        uses: actions/checkout@v3      
-        run: |
+      - uses: actions/checkout@v3      
+      - run: |
           curl -H "Authorization: Bearer ${{ secrets.YNAB_API_ACCESS_TOKEN }}" \
             -X POST https://api.ynab.com/v1/budgets/${{ secrets.YNAB_BUDGET_ID || 'last-used' }}/transactions/import
           
