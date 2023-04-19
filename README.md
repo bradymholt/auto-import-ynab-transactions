@@ -12,7 +12,7 @@ You can fork this repository and use it to import transactions on your own YNAB 
 
 
     You can optionally add another secret named `YNAB_BUDGET_ID` with the value of your YNAB budget ID for which you want to import transctions on. If you don't specify this secret, the "last used" budget will be targeted.
-1. Go to Actions in the repo and run the wokrflow manually to test it.
+1. Go to Actions in the repo and run the workflow manually to test it.
 
     ![Run workflow manually](https://user-images.githubusercontent.com/759811/232797417-ebe19553-b2de-4f9f-a47b-9f1e2aaf20e9.png)
 
