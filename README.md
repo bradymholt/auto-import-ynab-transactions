@@ -1,4 +1,4 @@
-This repository contains a GitHub Action workflows that will automatically import YNAB transactions from linked bank accounts on a recurring basis by utilizing the [YNAB API](https://api.ynab.com/).
+This repository contains a GitHub Action workflow that will automatically import YNAB transactions from linked bank accounts on a recurring basis by utilizing the [YNAB API](https://api.ynab.com/).
 
 You can fork this repository and use it to import transactions on your own YNAB account.
 
